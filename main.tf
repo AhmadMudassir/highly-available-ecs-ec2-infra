@@ -323,7 +323,7 @@ resource "null_resource" "ecr-docker-push-ahmad" {
   provisioner "local-exec" {
     command = <<EOF
     docker build -t ahmad-nginx-html ./nginx-dockerfile
-    aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
+    aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
     docker tag ahmad-nginx-html:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/<repo-name>:v1
     docker push <aws_account_id>.dkr.ecr.<region>.amazonaws.com/<repo-name>:v1
     EOF

@@ -24,7 +24,7 @@ The infrastructure includes:
 
 ## 🖼 Architecture Diagram
 
-> *Paste your architecture diagram here*
+![ecs_efs_ec2_private](https://github.com/user-attachments/assets/25daf4bf-80e0-43d8-b2ec-fb1ddae20b71)
 
 ---
 

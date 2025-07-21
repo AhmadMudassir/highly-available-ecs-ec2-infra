@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>Fargate Load Balancer Demo</title>
+      <title>ECS Custom Image Demo</title>
       <style>
         body {
           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div class="card">
-        <h1>🌐 Hello from Fargate!</h1>
+        <h1>🌐 Hello from ECS Cluster!</h1>
         <p>Served by container: <code>${hostname}</code></p>
       </div>
     </body>
